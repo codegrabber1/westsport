@@ -57,7 +57,7 @@ $options = get_option( 'cg_theme_options' );
 
 					<div class="col-xs-9 col-sm-9 col-md-3 col-md-pull-9">
 						<div class="site-branding">
-						ergwerger
+						
 							<?php
 								the_custom_logo();
 								if ( is_front_page() && is_home() ) :
