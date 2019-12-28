@@ -1,0 +1,33 @@
+{
+  "name": "westsport",
+  "version": "1.0.0",
+  "description": "Western Sports and Rehabilitation Center",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sport",
+    "ski",
+    "rehabilitation"
+  ],
+  "author": "codegrabber",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-connect-php7": "^1.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-remember": "^1.0.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "multipipe": "^2.0.3"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^4.1.0"
+  }
+}

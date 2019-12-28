@@ -1,0 +1,490 @@
+
+.sticky
+  display: block
+.sticky_thumb
+  img
+    margin: 0 auto
+.hentry
+  margin: 0 0 1.5em
+.updated:not(.published)
+  display: none
+.page-content,
+.entry-content,
+.content-area
+  margin: 0
+.entry-summary,
+.entry-footer
+  margin: 15px
+.entry-footer
+  // border: 1px solid red
+.comments-link,
+.edit-link,
+.tags-links
+  margin: 0 10px
+.spost_thumb
+.entry-content
+  padding: 0 15px
+  margin: 15px 0
+  ul
+    list-style: inherit
+    margin: 20px 0 0 20px
+    li
+      margin: 15px 0
+.single-soc
+  padding: 0 5px
+  margin: 10px auto
+  width: 50%
+  text-align: center
+  ul
+    li
+      display: inline-block
+      width: 20%
+      a
+        font-size: 30px
+        &.fb
+          color: $color__facebook
+        &.tw
+          color: $color__twitter
+        &.ins
+          color: $color__instagram
+
+.post-thumbnail img
+  margin: 0 auto
+.entry-header
+  margin: 0 0 20px 0
+.entry-title
+    border-left: 5px solid $color__background-topnav
+    padding: 5px 10px
+.page-links
+  clear: both
+  margin: 0 0 1.5em
+.s_title
+  border-bottom: 2px solid $color__background-topnav
+  margin-bottom: 15px
+.b_block
+  margin-bottom: 10px
+  position: relative
+  img
+    z-index: 1
+    object-fit: cover
+    margin: 0 auto
+.in_block,
+.b_title
+  position: absolute
+  z-index: 2
+  font-weight: bold
+  color: #fff
+  background: rgba(0, 0, 0, .7)
+  padding: 10px 15px
+.in_block
+  bottom: 40%
+  line-height: 23px
+  color: #fff
+  background-color: rgba(0, 120, 201, 0.7)
+  padding: 15px
+.b_title
+  top: 10%
+  text-transform: uppercase
+  left: 5%
+.in_block_btn
+  position: absolute
+  bottom: 10%
+  right: 2%
+  background-color: #f60
+  padding: 10px 45px
+  a
+    color: #fff
+    text-transform: uppercase
+    font-weight: bold
+.block_lstart
+  border-bottom: 2px solid $color__border_bottom
+  margin: 0 0 20px 0
+  padding: 0
+  background: #fff
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.17)
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.17)
+  position: relative
+  min-height: 193px
+  .limg
+    float: left
+    width: 100%
+  .ltext
+    float: none
+    width: 100%
+    margin: 10px auto
+    padding: 3px 0
+    p
+      line-height: 1.5em
+      margin: 0 10px
+    h3
+      @include font-size(1.2)
+      margin: 0 10px 10px
+      font-weight: 400
+
+.grid
+  margin: 20px 0
+  padding: 0
+  column-gap: 1.1em
+  -moz-column-gap: 1.1em
+  -webkit-column-gap: 1.1em
+  column-count: 3
+  -moz-column-count: 3
+  -webkit-column-count: 3
+  .grid-item
+    display: inline-block
+    padding: 0
+    margin: 0 0 1em
+    line-height: 23px
+    width: 100%
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+  .block_lstart
+    .grid-imgblock
+      position: relative
+      margin-bottom: 15px
+      .grid-title
+        color: #fff
+        position: absolute
+        bottom: 0
+        padding: 5px 10px
+        font-size: 15px
+        background-color: rgba(0, 0, 0, .7)
+    p
+      margin: 0 14px
+      float: right
+      a
+        color: $color__background-topnav
+        outline: none
+        text-decoration: none
+        font-weight: bold
+        display: block
+        text-align: center
+.staff-dep,
+.contact-infobox
+  padding: 10px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+  .main-post
+    h2
+      border: none
+      background: none
+      box-shadow: none
+  .staff_block
+    margin: 15px 0
+    position: relative
+  .main-post,
+  .staff_block
+    .staff-title
+        color: #fff
+        position: absolute
+        bottom: 4%
+        padding: 5px 10px
+        font-size: 15px
+        background-color: rgba(0, 0, 0, .7)
+  .staff_block
+    .overlay img
+      height: 250px
+      object-fit: contain
+  .staff-soc
+    margin: 10px 0
+    li
+      display: block
+      float: left
+      margin: 0 15px
+      width: 5%
+      a
+        font-size: 30px
+.contact-infobox
+  // border-top: 2px solid red
+  background-color: $invert_col
+  ul
+    margin: 10px 0
+  li
+    border-bottom: 1px solid #D8D8D8
+    margin-bottom: 20px
+    padding-bottom: 20px
+    padding-left: 12px
+    &:last-child
+      border-bottom: none
+      margin-bottom: 15px
+      padding-bottom: 15px
+  .contact-profile__icon
+    float: left
+    .fa
+      font-size: 25px
+  .contact-profile__text
+    margin-left: 35px
+    font-family: $font__top_header
+    font-size: 14px
+.g_main
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: -o-flex
+  display: flex
+  flex-flow: row wrap
+  // height: 300px
+  .g_item
+    border: 1px solid red
+    padding: 1px
+    flex: 1 0 200px
+    align-self: auto
+.contact-headblock
+  margin: 0 15px
+  padding: 10px 0
+  img
+    margin: 0 auto
+.timeline-centered
+  position: relative
+  margin: 30px 0
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 5px
+    background: #f2f3f7
+    top: 20px
+    bottom: 0
+    margin-left: 29px
+  .timeline-entry
+    position: relative
+    margin-top: 5px
+    margin-left: 30px
+    margin-bottom: 10px
+    clear: both
+    .timeline-entry-inner
+      position: relative
+      margin-left: -25px
+      .timeline-icon
+        display: block
+        width: 50px
+        height: 50px
+        word-wrap: break-word
+        background: #2c98f0
+        font-weight: bold
+        color: $color__border_bottom
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        -ms-border-radius: 50%
+        border-radius: 50%
+        text-align: center
+        -moz-box-shadow: 0 0 0 5px $color__border_bottom
+        -webkit-box-shadow: 0 0 0 5px $color__border_bottom
+        box-shadow: 0 0 0 5px $color__border_bottom
+        line-height: 20px
+        float: left
+        font-size: 14px
+        padding: 7px 5px
+      .timeline-label
+        position: relative
+        background: #fff
+        padding: 1.5em
+        margin-left: 65px
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 9px 9px 9px 0
+          border-color: transparent #c0c0becc transparent transparent
+          left: 0
+          top: 15px
+          margin-left: -9px
+        h1, h2, h3
+          display: inline-block
+/*=== For Sport Facilities ===*/
+.gallery-filter
+  ul
+    text-align: center
+    background: #0C1F34
+    width: 90%
+    margin: 30px auto
+    transform: skewX(-31deg)
+    li
+      display: inline
+      span
+        display: inline-block
+        color: #777d83
+        margin-right: 10px
+        padding: 10px 15px
+        text-transform: uppercase
+        cursor: pointer
+        position: relative
+        z-index: 1
+        transform: skewX(31deg)
+        transition: all 500ms ease
+        -moz-transition: all 500ms ease
+        -webkit-transition: all 500ms ease
+        -ms-transition: all 500ms ease
+        -o-transition: all 500ms ease
+        &:after
+          content: ''
+          position: absolute
+          left: 0px
+          top: 0px
+          width: 100%
+          height: 100%
+          background: #10bcf4
+          z-index: -1
+          opacity: 0
+          transition: all 500ms ease
+          -moz-transition: all 500ms ease
+          -webkit-transition: all 500ms ease
+          -ms-transition: all 500ms ease
+          -o-transition: all 500ms ease
+          transform: skewX(-30deg)
+          -ms-transform: skewX(-30deg)
+          -o-transform: skewX(-30deg)
+          -moz-transform: skewX(-30deg)
+          -webkit-transform: skewX(-30deg)
+      &.active,
+      &:hover
+        span
+          color: #fff
+          &:after
+            opacity: 1
+#image-gallery .mix
+  display: none
+.gallery-post
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: baseline
+  align-content: space-between
+  width: 100%
+  .gallery-img
+    width: 350px
+    height: 300px
+    margin: auto
+    align-self: baseline
+    a > img
+      display: block
+      height: 230px
+      width: 100%
+      overflow: hidden
+      &:focus
+        outline: none
+#timeline
+  position: relative
+  margin: 0 auto
+  &:after
+    content: ''
+    position: absolute
+    width: 6px
+    background-color: blue
+    top: 0
+    bottom: 0
+    left: 50%
+    margin-left: 1px
+  .inner
+    padding: 10px 40px
+    position: relative
+    // background-color: #f1f1f1
+    width: 50%
+    &:after
+      content: ''
+      position: absolute
+      width: 25px
+      height: 25px
+      right: -17px
+      background-color: white
+      border: 4px solid yellow
+      top: 15px
+      border-radius: 50%
+      z-index: 1
+.left
+  left: 0
+  &::before
+    content: " "
+    height: 0
+    position: absolute
+    top: 22px
+    width: 0
+    z-index: 1
+    right: 30px
+    border: medium solid black
+    border-width: 10px 0 10px 10px
+    border-color: transparent transparent transparent white
+.right
+  left: 50%
+  &::before
+    content: " "
+    height: 0
+    position: absolute
+    top: 22px
+    width: 0
+    z-index: 1
+    left: 30px
+    border: medium solid white
+    border-width: 10px 10px 10px 0
+    border-color: transparent white transparent transparent
+  &::after
+    left: -9px
+.inner_block
+  padding: 20px 30px
+  -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.17)
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.17)
+  background-color: #fff
+  position: relative
+  border-radius: 6px
+  &::after
+    left: 60px
+    border: medium solid white
+    border-width: 10px 10px 10px 0
+    border-color: transparent red transparent transparent
+  .inner_block_content
+    margin: 10px auto
+.b_year
+    margin: 20px auto 0
+    width: 90%
+    text-align: center
+    background: #0C1F34
+    transform: skewX(-31deg)
+    span
+      display: inline-block
+      color: #777d83
+      margin-right: 10px
+      padding: 10px 15px
+      text-transform: uppercase
+      cursor: pointer
+      position: relative
+      z-index: 1
+      transform: skewX(31deg)
+      transition: all 500ms ease
+      -moz-transition: all 500ms ease
+      -webkit-transition: all 500ms ease
+      -ms-transition: all 500ms ease
+      -o-transition: all 500ms ease
+      &::after
+        content: ''
+        position: absolute
+        left: 0px
+        top: 0px
+        width: 100%
+        height: 100%
+        background: #10bcf4
+        z-index: -1
+        opacity: 0
+        transition: all 500ms ease
+        -moz-transition: all 500ms ease
+        -webkit-transition: all 500ms ease
+        -ms-transition: all 500ms ease
+        -o-transition: all 500ms ease
+        transform: skewX(-30deg)
+        -ms-transform: skewX(-30deg)
+        -o-transform: skewX(-30deg)
+        -moz-transform: skewX(-30deg)
+        -webkit-transform: skewX(-30deg)
+      &.active,
+      &:hover
+        color: #fff
+        &:after
+          opacity: 1
+      a
+        color: #fff
+        display: block

@@ -1,0 +1,65 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea
+	color: $color__text-input
+	padding: 3px
+	&:focus
+		color: $color__text-input-focus
+textarea
+	width: 100%
+input[type="file"]
+	border: 0
+	padding: 10px
+	margin: 8px 0
+input[type="text"],
+input[type="email"],
+input[type="search"],
+textarea,
+select
+	border: none
+	border-bottom: 1px solid $color__text-screen
+	border-radius: .4rem
+	width: 100%
+	padding: 10px
+	margin: 8px 0
+	background-color: #fff
+	font-family: $font__top_header
+	// filter: progid: DXImageTransform.Microsoft.dropshadow 0, 1px, color=rgba(0, 0, 0, 0.2)
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus
+	border-bottom: 2px solid $border_col
+label,
+.m_button
+	@include font-size(1)
+	font-weight: 400
+	width: 100%
+.m_button
+	padding: 5px
+	margin: 0
+	width: 100px
+	float: right
+	position: absolute
+	bottom: 0
+	right: 0
+	outline: none
+	text-decoration: none
+	font-weight: bold
+	display: block
+	text-align: center
+	line-height: 22px
+

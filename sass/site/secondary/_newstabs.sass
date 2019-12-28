@@ -1,0 +1,34 @@
+.small_tabs
+  background-color: #fff
+.leftSide
+  float: right
+  width: 35%
+  
+  span.left-tab
+    display: block
+    padding: 10px 10px
+    background-color: #fff
+    cursor: pointer
+    border-bottom: 1px solid #9a9a9a
+    &:last-child
+      border-bottom: none
+    &.active
+      border-bottom: 1px solid #fa7b0a
+      color: #fa7b0a
+.rightSide
+  float: left
+  width: 65%
+  .right-item
+    display: none
+    position: relative
+    &:first-child
+      display: block
+    .tab_content
+      position: absolute
+      bottom: 0
+      color: #fff
+      background-color: rgba(0, 0, 0, 0.7)
+      padding: 5px
+      line-height: 23px
+
+      @include font-size(0.9)

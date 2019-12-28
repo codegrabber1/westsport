@@ -1,0 +1,32 @@
+.b_pagination
+  width: 100%
+  margin: 15px 0
+.b_pagination ul
+  display: table
+  margin: 0 auto
+.b_pagination li
+  float: left
+  margin: 0 5px
+.b_pagination li a.page-numbers
+  display: inline-block
+  padding: 4px 12px
+  margin-right: 0
+  border-radius: 0
+  border: solid 1px #c0c0c0
+  font-size: .875em
+  font-weight: bold
+  text-decoration: none
+  color: #717171
+.b_pagination li a.page-numbers:hover
+  color: $border_col
+  background: $color__background-topnav
+.b_pagination li span.page-numbers.current
+  display: inline-block
+  padding: 4px 12px
+  margin-right: 0
+  border-radius: 0
+  border: solid 1px #c0c0c0
+  font-size: .875em
+  font-weight: bold
+  @include box-shadow( 0, 0, 8px, rgba(0, 0, 0, 0.5), true)
+  color: $color__background-topnav

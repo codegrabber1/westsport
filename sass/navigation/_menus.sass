@@ -1,0 +1,131 @@
+nav
+	background: $color__background-topnav
+	.sf-arrows .sf-with-ul::after
+		border-top-color: $activ_col
+	.sf-menu
+		margin: 0
+		padding: 0
+		position: relative
+		background: transparent
+		float: right
+		.sf-mega
+			background-color:  rgba(0, 0, 0, 0.8)
+			-webkit-box-shadow: none
+			-moz-box-shadow: none
+			box-shadow: none
+			left: auto
+			&:after
+				content: ''
+				position: absolute
+				border: 10px solid transparent
+				border-top: 10px solid $activ_col
+				left: 10%
+				margin-left: -12px
+				top: 0
+				width: 0
+				z-index: 1000
+			ul
+				display: block
+				float: none
+				position: relative
+
+				li
+					background: $invert_col
+					display: block
+					margin: 5px 0
+					a
+						color: $invert_col
+						font-weight: normal
+						margin: 0
+						padding: 0
+						&:before
+							content: "\f105"
+							font-family: FontAwesome
+							float: left
+							margin-right: 10px
+						&:hover
+							color: $activ_col
+							margin-left: 5px
+		li
+			position: static
+			white-space: normal
+			background: transparent !important
+			&:hover
+				background: transparent !important
+			> a
+				text-decoration: none
+				font-family: $font__top_header
+				border: none
+				display: block
+				position: relative
+				margin: 2px 0 0 0
+				color: $invert_col
+				@include font-size( 1.1 )
+				&:hover
+					text-decoration: none
+					color: royalblue
+					color: $border_col
+				&.active
+					border-top: 2px solid $activ_col
+					margin: 0
+		> li
+			> ul
+				width: auto
+				left: auto
+				li
+					background-color:  rgba(0, 0, 0, 1) !important
+					&:hover
+					  background-color:  rgba(0, 0, 0, 1) !important
+					a
+					  color: royalblue
+					  position: relative
+					  &:hover
+						  color: $activ_col
+.posts-navigation
+	margin: 10px 0
+	padding: 10px
+	.nav-links a
+		color: #fff
+
+.mobile-mnu
+
+	cursor: pointer
+
+.toggle-mnu
+	display: block
+	width: 45px
+	height: 33px
+	float: left
+	padding: 6px 8px
+	span:after,
+	span:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+	span:after
+		top: 18px
+	span
+		position: relative
+		display: block
+	span, span:after, span:before
+		width: 100%
+		height: 3px
+		background-color: $activ_col
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+	&.on span
+		 background-color: transparent
+	&.on span:before
+		-webkit-transform: rotate(45deg) translate(-1px, 0px)
+		-moz-transform: rotate(45deg) translate(-1px, 0px)
+		-ms-transform: rotate(45deg) translate(-1px, 0px)
+		-o-transform: rotate(45deg) translate(-1px, 0px)
+		transform: rotate(45deg) translate(-1px, 0px)
+	&.on span:after
+		-webkit-transform: rotate(-45deg) translate(6px, -7px)
+		-moz-transform: rotate(-45deg) translate(6px, -7px)
+		-ms-transform: rotate(-45deg) translate(6px, -7px)
+		-o-transform: rotate(-45deg) translate(6px, -7px)
+		transform: rotate(-45deg) translate(6px, -7px)

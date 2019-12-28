@@ -1,0 +1,101 @@
+.bigslider-carousel
+  position: initial
+  .owl-nav
+    position: absolute
+    bottom: 4%
+    right: 10%
+    display: block !important
+    z-index: 5
+    > button
+      width: 64px
+      height: 64px
+
+      &.owl-prev
+        margin-right: 50px
+        outline: none
+        background: #ffd900
+        &:after
+          content: "\f100"
+          font-family: FontAwesome
+          color: $color__background-topnav
+          font-size: 20px
+      &.owl-next
+        outline: none
+        background: #ffd900
+        &:after
+          content: "\f101"
+          font-family: FontAwesome
+          color: $color__background-topnav
+          font-size: 20px
+.r_block
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-bottom: 2px solid $color__background-topnav
+  margin: 0 0 20px 0
+  padding: 10px 0
+  background: #fff
+  @include box-shadow( 0, 1px, 2px, rgba(0, 0, 0, 0.2), false)
+  h3
+    text-align: center
+    margin-bottom: 5px
+.related-posts
+  border-top: 1px solid $color__background-topnav
+.related-posts
+  .owl-nav
+    position: absolute
+    top: -45px
+    right: 10px
+    display: block !important
+.f_widget
+  .owl-nav
+    position: absolute
+    top: -40px
+    right: 10px
+    display: block !important
+.related-posts
+  .thumb img
+    // width: 270px
+    height: 150px
+    object-fit: cover
+  .owl-nav
+    .owl-prev
+      margin-right: 10px
+      outline: none
+      &:after
+        content: "\f0a8"
+        font-family: FontAwesome
+        color: $color__background-topnav
+        font-size: 20px
+    .owl-next
+      outline: none
+      &:after
+        content: "\f0a9"
+        font-family: FontAwesome
+        color: $color__background-topnav
+        font-size: 20px
+.item,
+.partner_block
+  position: relative
+.partner_block
+  margin: 10px 0
+  // height: 109px
+  .thumb
+    img
+      height: 130px
+.item
+  max-height: 100%
+  // height: 300px
+.excerpt-wrap
+  position: absolute
+  bottom: 0
+  padding: 5px 10px
+  font-size: 15px
+  background-color: rgba(0, 0, 0, .7)
+  h4 a
+    color: #fff
+.f_widget
+  .thumb
+    overflow: hidden
+    img
+      // height: 100%
+      max-height: 200px
+    object-fit: contain

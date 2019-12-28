@@ -1,0 +1,47 @@
+.widget_block{
+    margin: 0;
+    padding-top: 0;
+    position: relative;
+}
+.tabs {
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.tabs .tab {
+    display: block;
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+}
+.tabs .tab a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.active a {
+    color: #f60;
+}
+.active a:after {
+    content: '';
+    position: absolute;
+    border: 8px solid transparent;
+    border-top: 8px solid blue;
+    left: 50%;
+    margin-left: -12px;
+    top: 0;
+    width: 0;
+}
+
+.tab_item {
+    display: none;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.tab_item:first-child{
+    display: block;
+}

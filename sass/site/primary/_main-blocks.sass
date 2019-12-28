@@ -1,0 +1,164 @@
+.site-branding
+    padding: 0
+    margin-top: 5px
+    a
+      color: #fff
+.main-slider,
+.sliderborton
+    border: 0 solid red
+.main-slider
+    height: 90vh
+    position: relative
+    overflow: hidden
+    img
+        max-height: 90vh
+        object-fit: cover
+    .short-text,
+    .short-text__small
+        position: absolute
+        top: 10%
+        color: $invert_col
+        background-color: rgba(0, 0, 0, .6)
+        padding: 15px 5px
+        font-family: $font__main
+        @include font-size(1.1)
+        p
+          margin: 0 15px
+          line-height: 23px
+    .short-text
+        max-width: 600px
+        width: 100%
+        left: 5%
+        padding: 15px
+        h2
+          margin-bottom: 15px
+    .short-text__small
+        max-width: 300px
+        width: auto
+        padding: 5px 0
+.sliderborton
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: rgba(0, 0, 0, .9)
+    opacity: 0.8
+    z-index: 3
+    .slider__soc-block
+        //width: 60%
+        .slideBlock
+            padding: 20px 0
+            border-right: 1px solid rgba(250, 250, 250, 0.15)
+            text-align: center
+            &:last-child
+                border-right: none
+            .icon-box
+                width: 70%
+                margin: 0 auto
+                span
+                    display: block
+                    font-weight: bold
+                    color: #ccc
+                .fas,
+                .far
+                    @include font-size(2)
+                    color: yellow
+                .icon-box__text
+                    h4
+                        margin: 0
+                        @include font-size(1)
+                        color: #ccc
+                .top__nav-social
+                    margin: 20px auto
+                    li
+                        float: left
+                        display: block
+                        margin-right: 15px
+                        .fab
+                            @include font-size(2)
+.mainBlock
+    border-top: 3px solid $color__background-topnav
+    margin: 0
+    padding-top: 0
+    position: relative
+    .block_title
+      position: absolute
+      top: 0
+      left: 0
+    .owl-dots
+      text-align: center
+      margin-top: 15px
+      .owl-dot
+        width: 13px
+        height: 13px
+        border-radius: 100%
+        border: 1px solid #ccc
+        background: #fff
+        margin-right: 5px
+        display: inline-block
+        &.active
+          background: #fa7b0a
+    .tabs
+      width: 40%
+      margin: 0 auto
+      overflow: hidden
+      span.tab
+        display: block
+        position: relative
+        width: 50%
+        float: left
+        text-align: center
+        padding: 10px 0
+        a
+          text-transform: uppercase
+          text-decoration: none
+          font-weight: bold
+          font-family: $font__top_header
+          color: #000
+        &.active
+          a
+            color: #ff6600
+            outline: none
+            &:after
+              content: ''
+              position: absolute
+              border: 8px solid transparent
+              border-top: 8px solid $color__background-topnav
+              left: 50%
+              margin-left: -12px
+              top: 0
+              width: 0
+    .tab_item
+      display: none
+      // overflow: hidden
+      // margin: 20px 0
+      &:first-child
+        display: block
+.linear
+  background-color: $color__background-linearBlock
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+.l_thumb
+  width: 50%
+  margin: 20px auto
+  img
+    width: 200px
+    height: 200px
+    border-radius: 50% /* the magic */
+    -moz-border-radius: 50%
+    -webkit-border-radius: 50%
+    margin: 0 auto
+
+.linear_content
+  text-align: center
+  margin: 20px auto
+  h2
+    color: #fff
+.topfooter
+    background: $color__background-footer
+    color: $color__text-footer
+    padding: 20px 0
+    border-bottom: 1px solid $color__background-footerBorderBottom
+.subfooter
+    background: $color__background-subfooter
+    padding: 8px 0
+    border-top: 1px solid $color__background-subfooterBorderTop

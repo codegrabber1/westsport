@@ -1,0 +1,19 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1)
+	font-size: ($sizeValue * 16) * 1px
+	font-size: $sizeValue * 1rem
+
+// box-shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: false)
+	@if $inset
+		-webkit-box-shadow: inset $top $left $blur $color
+		-moz-box-shadow: inset $top $left $blur $color
+		box-shadow: inset $top $left $blur $color
+	@else
+		-webkit-box-shadow: $top $left $blur $color
+		-moz-box-shadow: $top $left $blur $color
+		box-shadow: $top $left $blur $color
+
+// text-shadow
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4))
+    text-shadow: $x $y $blur $color

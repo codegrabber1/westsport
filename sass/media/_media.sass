@@ -1,0 +1,183 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley
+	border: none
+	margin-bottom: 0
+	margin-top: 0
+	padding: 0
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object
+	max-width: 100%
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link
+	display: inline-block
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .block_lstart
+		.ltext h3
+			margin: 0 10px 10px !important
+@media only screen and (max-width: 1024px)
+	.single-soc
+		margin: 0
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	.mobile-mnu
+		margin: 5px
+	.site-branding
+		margin-top: 0
+		float: right
+	.sf-menu
+    	display: none !important
+	.staff_block
+	    .overlay img
+	      height: 220px
+	      object-fit: contain
+@media only screen and (max-width: 768px)
+	.main-slider
+		height: auto !important
+	.bigslider-carousel
+		.owl-nav
+			top: 20% !important
+			// bottom: 50% !important
+			width: 100%
+			right: 0 !important
+			> button
+				position: absolute
+				width: 50px !important
+				height: 50px !important
+				overflow: hidden
+				&.owl-prev
+					left: 3%
+					margin: 0 !important
+					background-color: transparent !important
+					&:after
+						font-size: 40px !important
+						color: #ffd900 !important
+				&.owl-next
+					right: 3%
+					background-color: transparent !important
+					&:after
+						font-size: 40px !important
+						color: #ffd900 !important
+	.partner_block
+		margin: 10px 0
+
+		.thumb
+			img
+				height: auto !important
+	.grid
+		column-count: 2
+	  -moz-column-count: 2
+	  -webkit-column-count: 2
+	.leftSide,
+	.rightSide
+		float: none
+		width: 100%
+	.leftSide
+		overflow: auto
+		height: 220px
+	.single-soc
+		width: 100%
+	.staff_block
+	    .overlay img
+	      height: auto
+	      object-fit: contain
+@media only screen and (max-width: 640px)
+	#timeline::after
+		left: 31px
+	.inner
+		width: 100% !important
+		padding-left: 70px !important
+		padding-right: 25px !important
+		&::before
+			left: 60px
+			border: medium solid white
+			border-width: 10px 10px 10px 0
+			border-color: transparent white transparent transparent
+	.left::after,
+	.right::after
+		left: 22px
+	.right
+		left: 0%
+	.lm-pic
+		-webkit-flex: 1 40%
+		-moz-flex: 1 40%
+		-ms-flex: 1 40%
+		-o-flex: 1 40%
+		flex: 1 40%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	.entry-title
+		font-size: 16px
+	.sliderborton
+		.slider__soc-block
+			.slideBlock
+				padding: 10px 0 !important
+	.block_lstart .limg
+		float: none
+		width: 100%
+		img
+			max-height: 300px
+	.block_lstart .ltext
+		float: none
+		width: 100%
+		margin: 10px 0
+	.grid
+		column-count: 1
+	  -moz-column-count: 1
+	  -webkit-column-count: 1
+	.tabs
+			width: 100% !important
+	.lm-pic
+		-webkit-flex: 1 50%
+		-moz-flex: 1 50%
+		-ms-flex: 1 50%
+		-o-flex: 1 50%
+		flex: 1 50%
+@media only screen and (max-width: 380px)
+	.bigslider-carousel
+		.owl-nav
+			top: 10% !important
+  .spost_thumb
+		.single-soc
+			top: 10% !important
+	.l_thumb
+		width: 100% !important
+  /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /*== ==*/
+
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /*== ==*/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+  /*== ==*/
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /*== ==*/
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /*== ==*/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  .container
+        width: 95%
+@media only screen and (min-width: 1920px)
+	nav .sf-menu li > a
+		@include font-size( 1.19 )
+	.f_widget .thumb img
+		max-height: 350px !important
+	.related-posts
+		.thumb img
+			height: 240px !important
+/**
+ * ## Galleries
+ */
+@import "galleries"
