@@ -11,6 +11,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
+      
         <?php
             // $idObj = get_category_by_slug( 'sushkevich' );
             $cat_id = get_queried_object()->term_id;

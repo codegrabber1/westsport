@@ -83,7 +83,7 @@ if( $feat_bigslider == 1) {
             $show_block = get_post_meta( $post->ID, 'cg_show_block', true );
             if( $show_block == 1 ):
         ?>
-          <section class="wow fadeIn clearfix linear" data-wow-delay="0.3s">
+          <section class="wow fadeIn clearfix" data-wow-delay="0.3s">
               <div class="container">
                 <div class="row">
                   <?php
